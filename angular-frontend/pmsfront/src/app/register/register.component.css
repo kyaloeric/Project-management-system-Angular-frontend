@@ -1,0 +1,93 @@
+.main {
+    background-color: #E9ECEF;
+    height: 100vh;
+  }
+  .main .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main .container a {
+    text-decoration: none;
+  }
+  .main .container .login-page, .main .container .register-page {
+    align-items: center;
+    background-color: #e9ecef;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+  }
+  .main .container .login-logo,
+  .main .container .register-logo {
+    font-size: 2.1rem;
+    font-weight: 300;
+    margin-bottom: 0.9rem;
+    text-align: center;
+  }
+  .main .container .login-page,
+  .main .container .register-page {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+  }
+  .main .container .login-box,
+  .main .container .register-box {
+    width: 50%;
+  }
+  .main .container .login-box .card,
+  .main .container .register-box .card {
+    margin-bottom: 0;
+  }
+  .main .container .login-card-body,
+  .main .container .register-card-body {
+    background-color: #fff;
+    border-top: 0;
+    color: #666;
+    padding: 20px;
+  }
+  .main .container .login-card-body .input-group .form-control,
+  .main .container .register-card-body .input-group .form-control {
+    border-right: 0;
+  }
+  .main .container .login-card-body .input-group .form-control:focus,
+  .main .container .register-card-body .input-group .form-control:focus {
+    box-shadow: none;
+  }
+  .main .container .login-card-body .input-group .form-control.is-valid:focus,
+  .main .container .register-card-body .input-group .form-control.is-valid:focus {
+    box-shadow: none;
+  }
+  .main .container .login-card-body .input-group .form-control.is-valid ~ .input-group-prepend .input-group-text,
+  .main .container .login-card-body .input-group .form-control.is-valid ~ .input-group-append .input-group-text,
+  .main .container .register-card-body .input-group .form-control.is-valid ~ .input-group-prepend .input-group-text,
+  .main .container .register-card-body .input-group .form-control.is-valid ~ .input-group-append .input-group-text {
+    border-color: green;
+  }
+  .main .container .login-card-body .input-group .form-control.is-invalid:focus,
+  .main .container .register-card-body .input-group .form-control.is-invalid:focus {
+    box-shadow: none;
+  }
+  .main .container .login-card-body .input-group .form-control.is-invalid ~ .input-group-append .input-group-text,
+  .main .container .register-card-body .input-group .form-control.is-invalid ~ .input-group-append .input-group-text {
+    border-color: red;
+  }
+  .main .container .login-card-body .input-group .input-group-text,
+  .main .container .register-card-body .input-group .input-group-text {
+    background-color: transparent;
+    border-bottom-right-radius: 20px;
+    border-left: 0;
+    border-top-right-radius: 20px;
+    color: #777;
+  }
+  .main .container .login-box-msg,
+  .main .container .register-box-msg {
+    margin: 0;
+    padding: 0 20px 20px;
+    text-align: center;
+  }
+  .main .container .social-auth-links {
+    margin: 10px 0;
+  }/*# sourceMappingURL=register.component.css.map */

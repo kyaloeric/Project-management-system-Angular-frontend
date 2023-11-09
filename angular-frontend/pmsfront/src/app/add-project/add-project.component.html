@@ -1,0 +1,42 @@
+<div class="d-flex">
+    <app-navbar></app-navbar>
+    <main class="w-100 p-2">
+
+        <div class="card">
+            <div class="card-header">
+              <h3 class="card-title">Projects</h3>
+  
+            </div>
+            <div class="card-body p-0">
+
+
+        <form action="process_form.php" method="POST">
+            <div class="mb-3">
+              <label for="projectName" class="form-label">Project Name</label>
+              <input type="text" class="form-control" id="projectName" name="projectName" required>
+            </div>
+            <div class="mb-3">
+              <label for="description" class="form-label">Description</label>
+              <input type="text" class="form-control" id="description" name="description" required>
+            </div>
+            <div class="mb-3">
+              <label for="deadline" class="form-label">Deadline</label>
+              <input type="text" class="form-control" id="deadline" name="deadline" required>
+            </div>
+            <div class="mb-3">
+              <label for="userId" class="form-label">User ID</label>
+              <input type="text" class="form-control" id="userId" name="userId">
+            </div>
+            <div class="mb-3">
+              <label for="status" class="form-label">Status</label>
+              <input type="text" class="form-control" id="status" name="status" value="0">
+            </div>
+            <button type="submit" class="btn btn-primary">Create Project</button>
+          </form>
+
+          </div>
+          </div>
+          
+        </main>
+
+        </div>

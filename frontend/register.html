@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="static/css/register.css">
+  <link rel="stylesheet" href="static/css/style.css">
+  <title>Project Management System</title>
+</head>
+<body>
+
+  <div class="toast error-toast">
+    <span class="toast-message" id="error-message"></span>
+  </div>
+
+  
+  <div class="register-container">
+    <div class="register-card">
+        <div class="logo">
+            <img src="static/images/logo.svg" alt="">
+        </div>
+        <h3>Project Management System</h3>
+        <small id="small-error">Register a new user</small>
+        <form id="registration-form">
+      <div class="input-container">
+        <input type="text" id="first_name" placeholder="First Name">
+        <i class="fa fa-user"></i>
+      </div>
+        <div class="input-container">
+        <input type="text" id="last_name" placeholder="Last Name">
+        <i class="fa fa-user"></i>
+      </div>
+
+      <div class="input-container">
+        <input type="email" id="email" placeholder="Email">
+        <i class="fa fa-envelope"></i>
+      </div>
+      <div class="input-container">
+        <input type="password" id="password" placeholder="Password">
+        <i class="fa fa-lock"></i>
+      </div>
+      <div class="input-container">
+        <input type="password" id="confirm_password" placeholder="Confirm Password">
+        <i class="fa fa-lock"></i>
+      </div>
+      <div class="register_btn_container">
+        <button type="submit">Register</button>
+      </div>
+    </form>
+      <div class="existing_membership_container">
+        <p>Already have an account? <a href="login.html">Login</a></p>
+      </div>
+    </div>
+  </div>
+  <script src="./dist/register.js"></script>
+</body>
+</html>

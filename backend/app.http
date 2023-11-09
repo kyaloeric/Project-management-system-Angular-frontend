@@ -1,0 +1,78 @@
+###
+POST http://localhost:6000/project/add
+Content-Type: application/json
+
+{
+   "project_name":"Kyalo",
+   "project_description":"kesho ningo",
+   "project_status":"Comp",
+   "dueDate":""
+
+}
+
+###
+
+GET http://localhost:6000/project/allProjects
+
+
+####
+PUT http://localhost:6000/project/editProject/83879077-7269-4db7-a8ad-dd6d5bf1b4f6
+Content-Type: application/json
+
+{
+   "project_name":"hey",
+   "project_description":"hey",
+   "project_status":"hey",
+   "dueDate":""
+
+}
+
+###
+
+DELETE http://localhost:6000/project/deleteProject/ba892a87-0093-4844-8b05-164c2c824315
+
+
+
+
+
+
+
+
+
+
+
+
+
+### 
+##User 
+
+POST http://localhost:6000/user/register
+Content-Type: application/json
+
+{
+   "first_name":"bill",
+   "last_name":"Mario",
+   "email":"kioko98@gmail.com",
+   "password": "123456789",
+   "role": "user"
+}
+
+
+
+###rs
+
+GET http://localhost:6000/user/all
+Content-Type: application/json
+
+{
+   "email":"kioko98@gmail.com",
+   "password": "123456789"
+}
+
+
+
+###
+
+GET http://localhost:6000/user/all
+
+

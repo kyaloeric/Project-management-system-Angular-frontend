@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management System</title>
+        <script src="https://cdn.jsdelivr.net/countupjs/1.8.5/countUp.min.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/0cc3d8b950.js" crossorigin="anonymous"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="static/images/logo.svg" alt="">
+            </div>
+
+            <hr>
+
+            <div class="profile-container">
+                <div class="profile-image-container">
+                    <img src="static/images/profile.png" alt="">
+                </div>
+                <div class="user-name-container">
+                    <p>Full Username</p>
+                </div>
+            </div>
+            
+
+            <hr>
+
+          
+                <a href="#" class="active">
+                  
+                    <i class="fa-solid fa-gauge"></i>
+                   Dashboard
+                
+                </a>
+
+
+
+            <div class="menu">
+                <h2>PROJECTS</h2>
+                <ul>
+                    <li><a href="#">
+                        <i class="fa-solid fa-border-all"></i>
+                        All Projects</a></li>
+                    <li>
+                        <a href="add-project.html">
+                            <i class="fa-solid fa-plus"></i>
+                        Add Project
+                    </a>
+                </li>
+                   
+                </ul>
+        
+                <h2>USERS</h2>
+                <ul>
+                    <li><a href="#">
+                        <i class="fa-solid fa-users"></i>
+                        All Users</a>
+                    </li>
+                    <li><a href="#">
+                        <i class="fa-solid fa-plus"></i>
+                        Add User</a>
+                    </li>
+                    
+                </ul>
+
+                <h2>USERS</h2>
+                <ul>
+                    <li><a href="#">
+                        <i class="fa-solid fa-address-card"></i>
+                        My Profile</a></li>
+                    
+                </ul>
+
+                <button class="logout-btn">
+                   LOGOUT
+                </button>
+
+            </div>
+
+
+            <!-- Sidebar content goes here -->
+        </div>
+        <div class="main">
+            <!-- Main content goes here -->
+
+            <div class="top-menu">
+                <div class="dashboard-card">
+                    <i class="fa-solid fa-bars"></i>   Home
+                    </div>
+            </div>
+
+            <div class="top-bar">
+                <div class="dashboard-card">
+                    <div class="image-container all-projects-container">
+                        <!-- <i class="fa-solid fa-address-card fa-3x"></i> -->
+                        <i class="fa-solid fa-border-all fa-3x"></i>
+                    </div>
+
+                    
+                    <div class="content">
+                        <div class="number">10</div>
+                        <h3>PROJECTS</h3>
+                    </div>
+                </div>
+            
+                <div class="dashboard-card">
+                    <div class="image-container my-projects-container">
+                        <i class="fa-solid fa-user fa-3x"></i>
+                    </div>
+
+                    
+                    <div class="content">
+                        <div class="number">10</div>
+                        <h3>MY PROJECTS</h3>
+                    </div>
+                </div>
+
+                <div class="dashboard-card">
+                    <div class="image-container users-container">
+                        <i class="fa-solid fa-users fa-3x"></i>
+                        <!-- <i class="fa-solid fa-address-card "></i> -->
+                    </div>
+
+                    
+                    <div class="content">
+                        <div class="number">10</div>
+                        <h3>USERS</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="middle-bar">
+                <div class="dashboard-card empty-card">
+                    <div style="width: 800px;">
+                        <canvas id="myChart"></canvas>
+                    </div>
+
+                </div>
+            
+                <div class="dashboard-card table-card">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>FULL NAME</th>
+                                <th>EMAIL</th>
+                                <th>DATE JOINED</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>John Doe</td>
+                                <td>johndoe@example.com</td>
+                                <td>2023-10-31</td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>John Doe</td>
+                                <td>johndoe@example.com</td>
+                                <td>2023-10-31</td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>John Doe</td>
+                                <td>johndoe@example.com</td>
+                                <td>2023-10-31</td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>John Doe</td>
+                                <td>johndoe@example.com</td>
+                                <td>2023-10-31</td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>John Doe</td>
+                                <td>johndoe@example.com</td>
+                                <td>2023-10-31</td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>John Doe</td>
+                                <td>johndoe@example.com</td>
+                                <td>2023-10-31</td>
+                            </tr>
+                            
+
+                            <tr>
+                                <td>1</td>
+                                <td>John Doe</td>
+                                <td>johndoe@example.com</td>
+                                <td>2023-10-31</td>
+                            </tr>
+
+
+                            <tr>
+                                <td>1</td>
+                                <td>John Doe</td>
+                                <td>johndoe@example.com</td>
+                                <td>2023-10-31</td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>John Doe</td>
+                                <td>johndoe@example.com</td>
+                                <td>2023-10-31</td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>John Doe</td>
+                                <td>johndoe@example.com</td>
+                                <td>2023-10-31</td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>John Doe</td>
+                                <td>johndoe@example.com</td>
+                                <td>2023-10-31</td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>John Doe</td>
+                                <td>johndoe@example.com</td>
+                                <td>2023-10-31</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+               
+            </div>
+
+            <div class="third-bar">
+                <div class="dashboard-card table-card">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>PROJECT NAME</th>
+                                <th>STATUS</th>
+                                <th>USER</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Project A</td>
+                                <td><span class="badge badge-success">Complete</span></td>
+                                <td>User 1</td>
+                                
+                                <td>
+                                    <button class="edit-button btn" >Edit</button>
+                                    <button class="view-button btn">View</button>
+                                    <button class="delete-button btn">Delete</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Project B</td>
+                                <td><span class="badge badge-warning">Incomplete</span></td>
+                                <td>User 2</td>
+                                <td>
+                                    <button class="edit-button btn">Edit</button>
+                                    <button class="view-button btn">View</button>
+                                    <button class="delete-button btn">Delete</button>
+                                </td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    <script src="static/js/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js" integrity="sha512-7U4rRB8aGAHGVad3u2jiC7GA5/1YhQcQjxKeaVms/bT66i3LVBMRcBI9KwABNWnxOSwulkuSXxZLGuyfvo7V1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

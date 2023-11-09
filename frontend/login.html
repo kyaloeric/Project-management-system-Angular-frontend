@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Project Management System</title>
+  <link rel="stylesheet" href="static/css/login.css">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+  <div class="toast error-toast">
+    <span class="toast-message" id="error-message"></span>
+  </div>
+
+  
+  <div class="login-container">
+    <div class="login-card">
+        <div class="logo">
+            <img src="static/images/logo.svg" alt="">
+        </div>
+        <h3>Project Management System</h3>
+      <small>Sign in to start your session</small>
+      <form id="login-form">
+
+
+      <div class="input-container">
+        <input type="email" id="login-email" placeholder="Email">
+        <i class="fa fa-envelope"></i>
+      </div>
+      <span id="email-error"></span>
+
+      <div class="input-container">
+        <input type="password" id="login-password" placeholder="Password">
+        <i class="fa fa-lock"></i>
+      </div>
+
+      <span id="password-error" ></span>
+
+      <div class="remember_login_container">
+        <div class="remeber_check">
+            <input type="checkbox" name="Remeber Me" id="">
+            Remeber Me
+        </div>
+        <div class="login_btn_container">
+            <button type="submit">Login</button>
+        </div>
+      </div>
+
+    </form>
+
+      <div class="remember_login_container">
+        <div class="new_membership_container">
+            <a href="./register.html">New Memebership</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <script src="./dist/login.js"></script>
+</body>
+</html>

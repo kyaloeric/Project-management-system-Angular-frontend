@@ -1,0 +1,124 @@
+.main{
+    background-color: #E9ECEF;
+    height: 100vh;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a{
+            text-decoration: none;
+        }
+    
+        .login-page, .register-page {
+            -ms-flex-align: center;
+            align-items: center;
+            background-color: #e9ecef;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            height: 100vh;
+            -ms-flex-pack: center;
+            justify-content: center;
+          }
+        
+        .login-logo,
+        .register-logo {
+          font-size: 2.1rem;
+          font-weight: 300;
+          margin-bottom: .9rem;
+          text-align: center;
+        
+        //   a {
+        //     color: $gray-700;
+        //   }
+        }
+        
+        .login-page,
+        .register-page {
+          align-items: center;
+        //   background-color: $gray-200;
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+          justify-content: center;
+        }
+        
+        .login-box,
+        .register-box {
+          width: 50%;
+        
+        
+          .card {
+            margin-bottom: 0;
+          }
+        }
+        
+        .login-card-body,
+        .register-card-body {
+          background-color:#fff;
+          border-top: 0;
+          color: #666;
+          padding: 20px;
+        
+          .input-group {
+            .form-control {
+              border-right: 0;
+        
+              &:focus {
+                box-shadow: none;
+        
+                // ~ .input-group-prepend .input-group-text,
+                // ~ .input-group-append .input-group-text {
+                //   border-color: $input-focus-border-color;
+                // }
+              }
+        
+              &.is-valid {
+                &:focus {
+                  box-shadow: none;
+                }
+        
+                ~ .input-group-prepend .input-group-text,
+                ~ .input-group-append .input-group-text {
+                  border-color: green;
+                }
+              }
+        
+              &.is-invalid {
+                &:focus {
+                  box-shadow: none;
+                }
+        
+                ~ .input-group-append .input-group-text {
+                  border-color: red;
+                }
+              }
+            }
+        
+            .input-group-text {
+              background-color: transparent;
+              border-bottom-right-radius: 20px;
+              border-left: 0;
+              border-top-right-radius: 20px;
+              color: #777;
+            //   transition: $input-transition;
+            }
+          }
+        }
+        
+        .login-box-msg,
+        .register-box-msg {
+          margin: 0;
+          padding: 0 20px 20px;
+          text-align: center;
+        }
+        
+        .social-auth-links {
+          margin: 10px 0;
+        }
+        
+        
+    }
+
+}
